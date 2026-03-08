@@ -13,4 +13,4 @@
 -видеть количество сделанных попыток;
 
 -знакомиться с работой простых алгоритмов и условий.
-<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/93d79f73-763d-4963-9406-23bfa8aacd9a" />
+

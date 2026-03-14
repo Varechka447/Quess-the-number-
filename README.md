@@ -22,7 +22,7 @@
 
 # **Use case диаграмма:**
 
-<img width="512" height="512" src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case%20.drawio.png"/>
+<img width="512" height="512" src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio%20(1).png"/>
 
 
 

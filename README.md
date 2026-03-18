@@ -15,3 +15,6 @@
 
 Проект показывает работу простых алгоритмов и условных операторов в программировании.
 
+
+
+<img width=512 height=512> scr="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio%20(1).png"/>

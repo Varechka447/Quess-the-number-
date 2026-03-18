@@ -22,5 +22,6 @@
 
 Проект показывает работу простых алгоритмов и условных операторов в программировании.
 
+# USE CASE:
 
-
+<img width=712 height=712 src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio%20(1).png?-"/> 

@@ -7,7 +7,7 @@
 
 ---
 
-###Что позволяет делать данная игра:
+### Что позволяет делать данная игра:
 =
 
 + проверять логическое мышление и внимательность;
@@ -21,11 +21,11 @@
 Проект показывает работу простых алгоритмов и условных операторов в программировании.
 
 
-#USE CASE:
+# USE CASE:
 
 <img width=712 height=712 src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio%20(1).png"/>
 
 
-#БЛОК-Схема:
+# БЛОК-Схема:
 
 <img width=712 height=712 src="https://github.com/Varechka447/Quess-the-number-/blob/main/%D0%91%D0%9B%D0%9E%D0%9A-%D1%81%D1%85%D0%B5%D0%BC%D0%B0.drawio%20(4).png"/>

@@ -5,6 +5,7 @@ import datetime
 import os
 import json
 
+#Главное окно приложения
 root = tk.Tk()
 root.title("Угадай число")
 root.geometry("600x500")
@@ -25,7 +26,7 @@ stats = {
     "losses": 0,
     "total_wrong_guesses": 0
 }
-
+#Окно статистики
 stats_window = None
 wins_label = None
 losses_label = None
@@ -34,18 +35,21 @@ wrongs_label = None
 log_file = os.path.join(os.path.dirname(__file__), "guess_game.log")
 stats_file = os.path.join(os.path.dirname(__file__), "guess_stats.json")
 
+#Инициализация лога
 def init_log():
     if not os.path.exists(log_file):
         with open(log_file, "w", encoding="utf-8") as f:
             f.write("=== Лог игры 'Угадай число' ===\n")
             f.write("Формат: [Время] СОБЫТИЕ: описание\n\n")
 
+#Запись в лог всех действий игрока
 def log(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     line = f"[{timestamp}] {message}\n"
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(line)
 
+#Сброс цвета кнопок
 def load_stats():
     global stats
     if os.path.exists(stats_file):
@@ -129,6 +133,7 @@ def make_guess(event=None):
 
         entry.delete(0, tk.END)
 
+#Кнопка "Сдаться"
 def surrender():
     global attempts, secret_number, game_start_time
     duration = datetime.datetime.now() - game_start_time
@@ -141,6 +146,7 @@ def surrender():
     messagebox.showinfo("Поражение", f"Вы сдались. Загаданное число было {secret_number}.")
     reset_to_start()
 
+#Возврат в главное окно
 def reset_to_start():
     global secret_number, attempts, game_start_time
     guess_frame.pack_forget()
@@ -150,6 +156,7 @@ def reset_to_start():
     attempts = 0
     game_start_time = None
 
+#Окно статистики
 def open_stats():
     global stats_window, wins_label, losses_label, wrongs_label
 
@@ -157,13 +164,14 @@ def open_stats():
         stats_window.lift()
         return
 
+#Создание нового окна
     stats_window = tk.Toplevel(root)
     stats_window.title("Статистика")
     stats_window.geometry("340x220")
     stats_window.resizable(False, False)
 
     tk.Label(stats_window, text="Статистика игры", font=("Arial", 14)).pack(pady=10)
-
+#Вывод статистики
     wins_label = tk.Label(stats_window, text=f"Победы: {stats['wins']}", font=("Arial", 16), fg="green")
     wins_label.pack(pady=5)
 
@@ -189,6 +197,7 @@ def update_stats_if_open():
 init_log()
 load_stats()
 
+#Главное меню выбора сложности
 diff_frame = tk.Frame(root)
 diff_frame.pack(anchor="nw", padx=20, pady=20)
 
@@ -208,11 +217,13 @@ start_btn = tk.Button(root, text="СТАРТ", font=("Arial", 24), bg="green", f
                       command=start_game)
 start_btn.pack(expand=True, pady=120)
 
+#Игровое окно
 guess_frame = tk.Frame(root)
 
 range_label = tk.Label(guess_frame, text="", font=("Arial", 14))
 range_label.pack(pady=20)
 
+#Поле ввода числа
 entry = tk.Entry(guess_frame, font=("Arial", 20), width=10, justify="center")
 entry.pack(pady=10)
 entry.bind("<Return>", make_guess)

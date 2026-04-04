@@ -7,13 +7,7 @@
 
 
 
-
-
-<img width=254 height=254 src="https://github.com/Varechka447/Quess-the-number-/blob/main/%D0%A3%D0%B3%D0%B0%D0%B4%D0%B0%D0%B9%20%D1%87%D0%B8%D1%81%D0%BB%D0%BE.webp"/>
-
-
-
-
+<img width=412 height=412 src="https://github.com/Varechka447/Quess-the-number-/blob/main/photo-output.png"/>
 
 
 ---

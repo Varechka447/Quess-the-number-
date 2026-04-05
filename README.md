@@ -5,10 +5,7 @@
 
 Пользователь вводит свои предположения, а программа после каждой попытки сообщает, больше или меньше введённое число. Игра продолжается до тех пор, пока пользователь не угадает правильное число. После этого программа выводит сообщение о победе и может показать количество сделанных попыток.
 
-
-
-<img width=412 height=412 src="https://github.com/Varechka447/Quess-the-number-/blob/main/photo-output.png"/>
-
+<img width=412 height=412 src="https://github.com/Varechka447/Quess-the-number-/blob/main/photo-output.png"/> 
 
 ---
 
@@ -70,8 +67,8 @@
 
 # USE CASE:
 
-<img width=712 height=712 src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio.png"/> 
+<img width=912 height=912 src="https://github.com/Varechka447/Quess-the-number-/blob/main/Use%20case.drawio.png"/> 
 
 # БЛОК-схема: 
 
-<img width=712 height=712 src=""/> 
+<img width=912 height=912 src="https://github.com/Varechka447/Quess-the-number-/blob/main/%D0%91%D0%9B%D0%9E%D0%9A-%D1%81%D1%85%D0%B5%D0%BC%D0%B0.drawio%20(1).png"/> 
